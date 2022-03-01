@@ -16,7 +16,7 @@ const positionMarker = {
 }
 
 const libraries = ["places"]
-
+console.log(process.env.REACT_MAPS_API); 
 export default function GoogleMap() {  
    const {isLoaded, loadError} = useLoadScript({
        googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API, 
